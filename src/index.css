@@ -1,0 +1,77 @@
+@import '@fortawesome/fontawesome-free/css/all.css';
+
+
+html{
+  box-sizing: border-box;
+  
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+#app{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: purple;
+  color: white;
+  
+  user-select: none;
+}
+
+.clock{
+  text-align: center;
+  font-size: 2em;
+  
+  >.length-setters {
+    display: flex;
+    flex-direction: row;
+  
+  
+  >.length-setter {
+    margin: 2em;
+  }
+  }
+  
+}
+
+
+
+i {
+  cursor: pointer;
+  padding: 15px;
+  
+  &:hover{
+    color: green;
+  }
+}
+
+.display{
+  width: fit-content;
+  margin: 0 auto;
+  border: 7px, green, solid;
+  border-radius: 35px;
+  background-color: pink;
+  color: blue;
+  padding: 30px;
+  
+  &.imminent {
+    color: red;
+  }
+}
+
+.time-left{
+  font-size: 4em;
+  
+  
+  
+}
